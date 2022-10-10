@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    padding: 20px 30px;
+    z-index: 999;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 4px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.btn-group button, .btn-group a{
+    transition: .2s linear;
+}
+
+.content{
+    margin-top: 5rem;
+}
+
+.imgBox img{
+    height: 500px;
+    width: 500px;
+}
+
+.menuIcon{
+    height: 50px;
+    display: none;
+}
+
+@media (max-width: 645px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        background: #dc2626;
+        width: 90%;
+        padding: 20px;
+        border-radius: 20px;
+        display: none;
+    }
+    .navbar ul li{
+        text-align: center;
+        padding: 10px;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+
+    .navbar ul li a{
+        color: #fff;
+    }
+
+    .navbar ul li:hover{
+        background: #fff;
+    }
+
+    .navbar ul li:hover a{
+        color: #000;
+    }
+
+    .topBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+    }
+
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .btn-group{
+        display: none;
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .content .imgBox img{
+        height: 300px;
+        width: 300px;
+    }
+}

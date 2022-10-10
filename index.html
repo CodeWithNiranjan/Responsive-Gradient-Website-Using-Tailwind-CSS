@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gradient Website Using TailwindCSS</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="z-10">
+        <nav class="navbar bg-transparent flex items-center justify-between">
+            <div class="topBar">
+                <a href="#"><h1 class="text-3xl text-red-600 font-semibold">Sauce</h1></a>
+
+                <img src="assests/menu.svg" alt="menu" class="menuIcon toggle">
+            </div>
+            <ul class="navMenu flex">
+                <li class="hover:tracking-widest"><a href="#" class="underline-none hover:underline-offset-8 hover:underline font-medium text-sm text-slate-800">Product</a></li>
+                <li class="hover:tracking-widest"><a href="#" class="underline-none hover:underline-offset-8 hover:underline font-medium text-sm text-slate-800">Features</a></li>
+                <li class="hover:tracking-widest"><a href="#" class="underline-none hover:underline-offset-8 hover:underline font-medium text-sm text-slate-800">Shop</a></li>
+                <li class="hover:tracking-widest"><a href="#" class="underline-none hover:underline-offset-8 hover:underline font-medium text-sm text-slate-800">Contact</a></li>
+            </ul>
+            <div class="btn-group">
+                <button class="px-4 py-3 bg-transparent rounded-xl hover:shadow-lg hover:tracking-widest">Login</button>
+                <button class="px-4 py-3 bg-transparent rounded-xl hover:shadow-lg hover:tracking-widest border-gray-900 border text-gray-900 hover:bg-gray-900 hover:text-white">Register</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <div class="content relative w-full flex justify-center py-0 px-[60px]">
+        <div class="textBox relative max-w-[800px]">
+            <h1 class="text-slate-900 text-9xl fot-medium">Spice Up to <br>Mood Up</h1>
+            <p class="text-slate-800 text-7xl font-normal">Spicy Vegetable Rice</p>
+            <div class="btn-group mt-10">
+                <a href="#" class="px-6 py-5 mt-10 bg-transparent border-gray-900 border rounded-2xl text-white bg-gray-900 hover:tracking-widest">Book a Table</a>
+                <a href="#" class="px-6 py-5 mt-10 bg-transparent border-gray-900 border rounded-2xl text-gray-900 hover:bg-gray-900 hover:text-white hover:tracking-widest">View Menu</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <div class="imgSlider">
+                <img src="assests/plate1.png" alt="" class="imgBlock">
+                <div class="controls flex w-30 justify-center">
+                    <div class="dot1 m-2 cursor-pointer w-auto bg-gray-700 rounded-2xl w-5 h-5"></div>
+                    <div class="dot2 m-2 cursor-pointer w-auto bg-gray-700 rounded-2xl w-5 h-5"></div>
+                    <div class="dot3 m-2 cursor-pointer w-auto bg-gray-700 rounded-2xl w-5 h-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gradient Background -->
+    <div class="blob w-[800px] h-[800px] rounded-[999px] absolute top-0 right-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200"></div>
+    <div class="blob w-[1000px] h-[1000px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-red-200 via-gray-100 to-blue-100"></div>
+    <div class="blob w-[600px] h-[600px] rounded-[999px] absolute bottom-0 left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-slate-100 via-teal-100 to-blue-100"></div>
+    <div class="blob w-[300px] h-[300px] rounded-[999px] absolute bottom-[-10px] left-0 -z-10 blur-3xl bg-opacity-60 bg-gradient-to-r from-green-200 via-cyan-200 to-Fuchsia-300"></div>
+    <script src="app.js"></script>
+</body>
+</html>
